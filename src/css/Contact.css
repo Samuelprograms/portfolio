@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+.contact {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 80vh;
+  border-top: 1px solid #444;
+}
+.contact::after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background: url("./banner.jpg");
+}
+.form {
+  padding: 0px 20px;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 400px);
+  grid-template-areas: "video_one contact__form video_two";
+}
+.contact__form {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: contact__form;
+}
+
+.form__field {
+  margin-top: 30px;
+  width: 80%;
+  font-size: 20px;
+  min-width: 240px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #555;
+}
+.form__field:focus,
+.form__field:hover {
+  border-bottom: 1px solid #fff;
+}
+.form__icon {
+  margin-right: 10px;
+}
+.form__icon path {
+  color: #aaa;
+}
+.form__button {
+  padding: 10px 20px;
+  margin: 30px 0 0 0;
+  color: #aaa;
+  background: transparent;
+  border: 1px solid #333;
+}
+.form__button:hover {
+  background: rgba(200, 200, 200, 0.2);
+  border: 1px solid #fff;
+  color: #fff;
+}
+.form__button:hover > .form__icon path {
+  color: #fff;
+}
+.contact-video {
+  border-radius: 10px;
+}
+.video_one {
+  grid-area: video_one;
+}
+.video_two {
+  grid-area: video_two;
+}
+.error {
+  margin-top: 5px;
+  font-weight: 700;
+  color: rgb(253, 66, 66);
+}
+@media screen and (max-width: 1200px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "contact__form contact__form"
+      "video_one video_two";
+  }
+  .contact {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    border: none;
+  }
+  .form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "contact__form"
+      "video_one"
+      "video_two";
+  }
+  .form__field {
+    width: 90%;
+  }
+}

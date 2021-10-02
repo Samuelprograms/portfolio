@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+.resume {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  position: relative;
+  font-family: "Fira Sans", sans-serif;
+}
+.resume::after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background: url("./banner.jpg");
+}
+.education,
+.grades,
+.skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  flex: 1;
+  text-align: end;
+  margin: 50px;
+  border-bottom: 1px solid #888;
+  font-size: 20px;
+  font-weight: 200;
+}
+.education__items,
+.grades__items,
+.skills {
+  flex: 2;
+  text-align: start;
+  padding: 20px;
+  margin: 40px 0;
+}
+.info {
+  margin-bottom: 20px;
+}
+.info__name {
+  font-size: 30px;
+}
+.info__degree {
+  font-size: 13px;
+  color: #999;
+}
+.info__degree__date {
+  color: #777;
+}
+.info__description {
+  margin: 10px 0;
+  font-size: 14px;
+  width: 50%;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.bars,
+.bars_language {
+  width: 700px;
+}
+.bar {
+  margin: 0 0 3px 0;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+.bar_language {
+  margin: 0 0 20px 0;
+  border-radius: 35px;
+}
+.bar_language > div span {
+  color: #000;
+}
+hr {
+  width: 45%;
+  border-color: #444;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1900px) {
+  hr {
+    width: 70%;
+  }
+  .bars,
+  .bar_language {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .education,
+  .grades,
+  .skill {
+    flex-direction: column;
+  }
+  .title {
+    margin: 50px 50px 10px;
+  }
+  .info__degree {
+    font-size: 16px;
+  }
+  .info__description {
+    font-size: 15px;
+    width: 100%;
+  }
+  .education__items,
+  .grades__items {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+  .bars {
+    width: 88%;
+    font-size: 13px;
+  }
+  .bars_language {
+    text-align: center;
+    width: 100%;
+  }
+  .bar_language {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  .skills {
+    align-items: center;
+  }
+  hr {
+    width: 85%;
+  }
+}

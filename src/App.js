@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./Components/NavBar";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+import WhatsApp from "./Components/WhatsApp";
+import About from "./Components/About";
+import Portfolio from "./Components/Portfolio";
+import CurrentWork from "./Components/CurrentWork";
+import Resume from "./Components/Resume";
+import { data } from "./Data";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Header />
+      <About data={data.about.description} carrousel={data.about.grades}/>
+      <Resume data={data.resume} />
+      <Portfolio data={data.portfolio.projects} />
+      <CurrentWork data={data.portfolio.currentWork} />
+      <Contact />
+      <Footer />
+      <WhatsApp />
+    </>
   );
-}
+};
 
 export default App;

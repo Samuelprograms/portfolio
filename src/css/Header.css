@@ -1,0 +1,80 @@
+#home {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home::after {
+  content: "";
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background: url("./banner.jpg");
+}
+.header__text {
+  margin: 20px 0;
+}
+.header__title {
+  font-size: 60px;
+  line-height: 50px;
+  font-weight: 100;
+  font-family: "Cinzel";
+}
+.header__description {
+  font-size: 15px;
+  margin: 20px 0;
+  font-weight: 100;
+  font-family: "Cinzel";
+}
+.header__buttons {
+  margin-bottom: 50px;
+}
+.header__button {
+  padding: 15px 35px;
+  margin: 3px;
+  color: #aaa;
+  border: 1px solid #333;
+  transition: all 0.3s ease-in;
+}
+.btn-icon {
+  margin-right: 10px;
+}
+.btn-icon path {
+  color: #aaa;
+  transition: all 0.3s ease-in;
+}
+.header__button:hover > .btn-icon path {
+  color: #fff;
+}
+.header__button:hover {
+  background: rgba(200, 200, 200, 0.2);
+  border-color: #fff;
+  color: #fff;
+}
+@media only screen and (max-width: 900px) {
+  .header__button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+  .header__title {
+    font-size: 45px;
+  }
+  .header__description {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .header__title {
+    font-size: 40px;
+  }
+}

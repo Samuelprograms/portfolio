@@ -1,0 +1,65 @@
+.about {
+  width: 100%;
+  font-family: "Fira Sans", sans-serif;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+}
+.contenedor {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+.contenedor__left {
+  font-size: 20px;
+  flex: 1;
+}
+.contenedor__right {
+  filter: grayscale(100%);
+  background-image: linear-gradient(to right, #000, transparent 70%),
+    url("../css/about.jpg");
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  flex: 1;
+}
+.contenedor__right:hover{
+  filter: grayscale(0%);
+}
+.carrousel{
+  margin-top: 50px;
+  width: 80%;
+  display: flex;
+  overflow-x: scroll;
+}
+.carrousel img {
+  opacity: .3;
+  width: 350px;
+  margin: 0 10px;
+}
+.carrousel img:hover{
+  opacity: 1;
+}
+@media only screen and (max-width: 1039px) {
+  .contenedor {
+    flex-direction: column;
+  }
+  .contenedor__left {
+    text-align: justify;
+    margin-bottom: 15px;
+  }
+  .contenedor__right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contenedor__left {
+    font-size: 13px;
+  }
+}
