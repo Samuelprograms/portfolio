@@ -201,12 +201,6 @@ export const data = {
         url: "https://samuelprograms.github.io/todo/",
       },
       {
-        title: "Interest Calculator",
-        image: "intereses.jpg",
-        description: "This GUI is a calculator for interest",
-        url: "https://samuelprograms.github.io/calculadora-de-intereses/",
-      },
-      {
         title: "School admin panel",
         image: "school.jpg",
         description:
