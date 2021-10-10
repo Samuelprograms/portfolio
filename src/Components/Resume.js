@@ -109,7 +109,7 @@ function Resume({ data }) {
       <div key={index} className="bars_language">
         <Slide left cascade>
           <h2 className="skill__name">
-            {language.name}&bull;{language.level}
+            {language.name} - {language.level}
           </h2>
           <div className="bar_language">
             {language.skills.map((skill, index) => (

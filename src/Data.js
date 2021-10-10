@@ -106,10 +106,6 @@ export const data = {
         level: "90%",
       },
       {
-        name: "Styled-components",
-        level: "90%",
-      },
-      {
         name: "JavaScript",
         level: "85%",
       },
@@ -119,6 +115,10 @@ export const data = {
       },
       {
         name: "Node JS",
+        level: "80%",
+      },
+      {
+        name: "MongoDB",
         level: "80%",
       },
       {
@@ -135,6 +135,10 @@ export const data = {
       },
     ],
     otheSkills: [
+      {
+        name: "Styled-components",
+        level: "90%",
+      },
       {
         name: "Firebase",
         level: "100%",
@@ -155,7 +159,7 @@ export const data = {
     languages: [
       {
         name: "English",
-        level: "B1",
+        level: "B2",
         skills: [
           { listening: "80%" },
           { speaking: "70%" },
