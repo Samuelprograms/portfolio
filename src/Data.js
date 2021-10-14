@@ -71,6 +71,11 @@ export const data = {
       },
 
       {
+        school: "University Mongo",
+        degree: "MongoDB for Javascript developers",
+        graduated: "2021",
+      },
+      {
         school: "AWS Educate",
         degree: "Cloud Computing 101",
         graduated: "2021",
