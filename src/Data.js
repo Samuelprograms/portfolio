@@ -10,48 +10,40 @@ export const data = {
             such as JavaScript, TypeScript, React, SQL, Python, Material UI and
             styled components, I have experience with version control software
             like Git and cloud services such as Firebase`,
-    grades:[
+    grades: [
       {
-
         title: "Build amazing sites with HTML, CSS and JS",
-        url: "1.jpg"
+        url: "1.jpg",
       },
       {
-
         title: "Git & Github essentials",
-        url: "2.jpg"
+        url: "2.jpg",
       },
       {
-
         title: "Automation",
-        url: "3.jpg"
+        url: "3.jpg",
       },
       {
-
         title: "Python 3 master course",
-        url: "4.jpg"
+        url: "4.jpg",
       },
       {
-
         title: "Python 3 desde cero",
-        url: "5.jpg"
+        url: "5.jpg",
       },
       {
-
         title: "React desde cero",
-        url: "6.jpg"
+        url: "6.jpg",
       },
       {
-
         title: "Scientific computing with python",
-        url: "7.png"
+        url: "7.png",
       },
       {
-
         title: "Scrum master",
-        url: "8.jpg"
+        url: "8.jpg",
       },
-    ]
+    ],
   },
   resume: {
     education: [
@@ -127,7 +119,7 @@ export const data = {
         level: "80%",
       },
       {
-        name: "Express",
+        name: "Express JS",
         level: "80%",
       },
       {
@@ -136,6 +128,10 @@ export const data = {
       },
       {
         name: "MySQL",
+        level: "75%",
+      },
+      {
+        name: "Vue JS",
         level: "75%",
       },
     ],
@@ -180,7 +176,7 @@ export const data = {
         title: "Gmail clone",
         image: "gmail.jpg",
         description:
-          "The Gmail clone is a project made with React, Redux, Firebase and Material UI",
+          "The Gmail clone is a project made with React, Redux, Firebase and Material UI.",
         url: "https://clone-c44e6.web.app/",
       },
       {
@@ -189,6 +185,13 @@ export const data = {
         description:
           "The netflix landing page was my first React project, was made using React, vanilla CSS and TMDB api.",
         url: "https://samuelprograms.github.io/netflix-clone/",
+      },
+      {
+        title: "Tesla landing page",
+        image: "tesla.jpg",
+        description:
+          "The Tesla landing page was my first Vue project, was made using Vue, vanilla CSS.",
+        url: "https://tesla-clone-two.vercel.app/",
       },
       {
         title: "Resistor",
@@ -201,7 +204,7 @@ export const data = {
         title: "ToDo",
         image: "todo.jpg",
         description:
-          "This Todo app was made using React, localstorage and vanilla CSS",
+          "This Todo app was made using React, localstorage and vanilla CSS.",
 
         url: "https://samuelprograms.github.io/todo/",
       },
@@ -209,21 +212,21 @@ export const data = {
         title: "School admin panel",
         image: "school.jpg",
         description:
-          "This GUI is an administration panel for a school, you can create classes, teachers and students",
+          "This GUI is an administration panel for a school, you can create classes, teachers and students.",
         url: "https://samuelprograms.github.io/sincoabr-school/",
       },
       {
         title: "Weather app",
         image: "weather.jpg",
         description:
-          "with this application you will be updated with the world's climate",
+          "with this application you will be updated with the world's climate.",
         url: "https://samuelprograms.github.io/weather/",
       },
       {
         title: "Image Compressor",
         image: "compressor.jpg",
         description:
-          "This is an image compressor made with React and styled-components",
+          "This is an image compressor made with React and styled-components.",
         url: "https://samuelprograms.github.io/image-compressor/",
       },
     ],
