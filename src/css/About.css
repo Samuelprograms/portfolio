@@ -38,9 +38,12 @@
   display: flex;
   overflow-x: scroll;
 }
+.carrousel::-webkit-scrollbar{
+  display: none;
+}
 .carrousel img {
   opacity: .3;
-  width: 350px;
+  width: 250px;
   margin: 0 10px;
 }
 .carrousel img:hover{

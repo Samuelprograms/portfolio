@@ -5,7 +5,7 @@ import "./../css/WhatsApp.css";
 function WhatsApp() {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=19294476947"
+      href="https://api.whatsapp.com/send?phone=573108768789"
       target="_BLANK"
       rel="noopener noreferrer"
     >

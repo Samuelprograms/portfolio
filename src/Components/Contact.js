@@ -36,22 +36,23 @@ function Contact() {
 
   const sendEmail = async() => {
     setIsSending(true);
-    await emailjs
-      .send(
-        "service_rdwz3nd",
-        "template_6yr1gsf",
-        values,
-        "user_RkBW3FeSHbWnLKiMfMgKA"
-      )
-      .then((response) => {
-        alert("Message sent succesfully")
-        console.log(response);
-      }).finally(() => setIsSending(false))
-      .catch((err) => {
-        alert("The message can't be sent")
-        console.log(err)
-      });
-      
+    try{
+      await emailjs
+        .send(
+          "service_rdwz3nd",
+          "template_6yr1gsf",
+          values,
+          "user_RkBW3FeSHbWnLKiMfMgKA"
+        ) 
+      alert("Message sent succesfully")
+      values.name = "";
+      values.email = "";
+      values.subject = "";
+      values.message = "";
+      setIsSending(false);
+    }catch(e){
+      alert("The message can't be sent")
+    }      
   };
 
   return (

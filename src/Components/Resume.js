@@ -12,6 +12,20 @@ function Resume({ data }) {
     }
     return color;
   };
+  const work = data.experience.map(function (job, index) {
+    return (
+      <div key={index} className="info">
+        <Slide left cascade>
+          <h2 className="info__name">{job.company}</h2>
+          <span className="info__degree">
+            {job.startDate} <span>&bull;</span>
+            <em className="info__degree__date">{job.endDate}</em>
+          </span>
+          <p className="info__description">{job.description}</p>
+        </Slide>
+      </div>
+    );
+  });
   const education = data.education.map(function (education, index) {
     return (
       <div key={index} className="info">
@@ -143,6 +157,11 @@ function Resume({ data }) {
   return (
     <section id="resume" className="resume">
       <Slide left cascade>
+        <div className="education">
+          <h2 className="title">EXPERIENCE</h2>
+          <div className="education__items">{work}</div>
+        </div>
+        <hr />
         <div className="education">
           <h2 className="title">EDUCATION</h2>
           <div className="education__items">{education}</div>

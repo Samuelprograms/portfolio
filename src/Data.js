@@ -1,15 +1,7 @@
 export const data = {
   about: {
-    description: `Here Samuel Cerón, I am a Mechatronics Engineer student from
-            Universidad Militar Nueva Granada, Self-Taught Web developer and
-            very often python programming teacher looking to gain work
-            experience in web development and design, during my career I have
-            been actively participating in research, leading work groups for
-            final projects highlighting my skills in communication and teamwork.
-            I am also a big fan of agile methodologies like Scrum and technologies for web developing
-            such as JavaScript, TypeScript, React, SQL, Python, Material UI and
-            styled components, I have experience with version control software
-            like Git and cloud services such as Firebase`,
+    description: `What's up!
+    I am Samuel Cerón, Self-Taught Web developer, Mechatronics Engineering student and sometimes Python programming teacher, user of Agile methodologies like Scrum and technologies for web development such as HTML, CSS, Javascript, Typescript, React JS, Node JS, Express JS, MongoDB, Python, SQL, Redux, Material UI, styled components and Bootstrap, I have experience with version control software like Git and cloud services such as Github, Firebase, Google Cloud and Mongo Atlas`,
     grades: [
       {
         title: "Build amazing sites with HTML, CSS and JS",
@@ -46,6 +38,16 @@ export const data = {
     ],
   },
   resume: {
+    experience: [
+      {
+        company: "Globant",
+        position: "Semi-senior Frontend Developer",
+        startDate: "November 2021",
+        endDate: "Present",
+        description:
+          "I am currently working on projects where I'm using technologies such as ReactJS, NextJS, Redux, SASS, Storybook",
+      },
+    ],
     education: [
       {
         school: "Universidad Militar Nueva Granada",
@@ -123,16 +125,24 @@ export const data = {
         level: "80%",
       },
       {
+        name: "Next JS",
+        level: "75%",
+      },  
+      {
         name: "SQL",
         level: "75%",
       },
       {
-        name: "MySQL",
+        name: "Jest",
         level: "75%",
       },
       {
-        name: "Vue JS",
-        level: "75%",
+        name: "MySQL",
+        level: "60%",
+      },
+      {
+        name: "React Testing Library",
+        level: "60%",
       },
     ],
     otheSkills: [
@@ -149,12 +159,8 @@ export const data = {
         level: "90%",
       },
       {
-        name: "SolidCAM",
+        name: "Storybook",
         level: "85%",
-      },
-      {
-        name: "SolidWorks",
-        level: "80%",
       },
     ],
     languages: [
