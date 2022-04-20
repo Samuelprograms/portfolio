@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { Fade } from "react-reveal";
 import { useFormik } from "formik";
@@ -34,25 +34,24 @@ function Contact() {
       },
     });
 
-  const sendEmail = async() => {
+  const sendEmail = async () => {
     setIsSending(true);
-    try{
-      await emailjs
-        .send(
-          "service_rdwz3nd",
-          "template_6yr1gsf",
-          values,
-          "user_RkBW3FeSHbWnLKiMfMgKA"
-        ) 
-      alert("Message sent succesfully")
+    try {
+      await emailjs.send(
+        "service_rdwz3nd",
+        "template_6yr1gsf",
+        values,
+        "user_RkBW3FeSHbWnLKiMfMgKA"
+      );
+      alert("Message sent succesfully");
       values.name = "";
       values.email = "";
       values.subject = "";
       values.message = "";
       setIsSending(false);
-    }catch(e){
-      alert("The message can't be sent")
-    }      
+    } catch (e) {
+      alert("The message can't be sent");
+    }
   };
 
   return (
@@ -111,7 +110,7 @@ function Contact() {
             ) : null}
             <button disabled={isSending} type="submit" className="form__button">
               <FontAwesomeIcon className="form__icon" icon={faPaperPlane} />
-              Send
+              {isSending ? "Sending..." : "Send"}
             </button>
           </form>
           <iframe

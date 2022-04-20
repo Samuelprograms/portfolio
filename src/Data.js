@@ -35,6 +35,14 @@ export const data = {
         title: "Scrum master",
         url: "8.jpg",
       },
+      {
+        title: "Mongo DB for JS developers",
+        url: "9.jpg",
+      },
+      {
+        title: "Android mobile development",
+        url: "10.png",
+      },
     ],
   },
   resume: {
@@ -59,11 +67,15 @@ export const data = {
     ],
     grades: [
       {
+        school: "Universidad de Antioquia",
+        degree: "Android development",
+        graduated: "2021",
+      },
+      {
         school: "FreeCodeCamp Academy",
         degree: "Computing Science with Python",
         graduated: "2021",
       },
-
       {
         school: "University Mongo",
         degree: "MongoDB for Javascript developers",
@@ -109,6 +121,10 @@ export const data = {
         level: "85%",
       },
       {
+        name: "Next JS",
+        level: "85%",
+      },
+      {
         name: "TypeScript",
         level: "80%",
       },
@@ -125,10 +141,6 @@ export const data = {
         level: "80%",
       },
       {
-        name: "Next JS",
-        level: "75%",
-      },  
-      {
         name: "SQL",
         level: "75%",
       },
@@ -143,6 +155,10 @@ export const data = {
       {
         name: "React Testing Library",
         level: "60%",
+      },
+      {
+        name: "Unity",
+        level: "40%",
       },
     ],
     otheSkills: [
@@ -234,6 +250,13 @@ export const data = {
         description:
           "This is an image compressor made with React and styled-components.",
         url: "https://samuelprograms.github.io/image-compressor/",
+      },
+      {
+        title: "Contigo Abbott",
+        image: "abbott.png",
+        description:
+          "This was the first project I worked on in Globant, use NextJS and Drupal",
+        url: "https://contigo.abbott/",
       },
     ],
     currentWork: [

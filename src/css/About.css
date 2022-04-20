@@ -29,25 +29,26 @@
   height: 100%;
   flex: 1;
 }
-.contenedor__right:hover{
+.contenedor__right:hover {
   filter: grayscale(0%);
 }
-.carrousel{
+.carrousel {
   margin-top: 50px;
   width: 80%;
   display: flex;
   overflow-x: scroll;
 }
-.carrousel::-webkit-scrollbar{
+.carrousel::-webkit-scrollbar {
   display: none;
 }
 .carrousel img {
-  opacity: .3;
+  opacity: 0.3;
   width: 250px;
   margin: 0 10px;
 }
-.carrousel img:hover{
+.carrousel img:hover {
   opacity: 1;
+  transform: scale(1.04);
 }
 @media only screen and (max-width: 1039px) {
   .contenedor {

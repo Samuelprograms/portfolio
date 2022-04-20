@@ -13,7 +13,7 @@ function About({ data, carrousel }) {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            width: "100%"
+            width: "100%",
           }}
         >
           <div className="contenedor">
@@ -23,13 +23,16 @@ function About({ data, carrousel }) {
             </div>
           </div>
           <div className="carrousel">
-            {carrousel.map((item) => (
-              <img
-                key={item.title}
-                src={process.env.PUBLIC_URL+"/images/" + item.url}
-                alt={item.title}
-              />
-            ))}
+            {carrousel
+              .map((item) => ({ item, sort: Math.random() }))
+              .sort((a, b) => a.sort - b.sort)
+              .map(({ item }) => (
+                <img
+                  key={item.title}
+                  src={process.env.PUBLIC_URL + "/images/" + item.url}
+                  alt={item.title}
+                />
+              ))}
           </div>
         </div>
       </Fade>
