@@ -4,15 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./../css/Header.css";
-function Header() {
+function Header({ data }) {
   return (
     <div id="home">
       <div className="header__text">
         <Fade bottom cascade>
-          <h1 className="header__title">Samuel Cerón</h1>
-          <h3 className="header__description">
-            Self Taught web developer & Mechatronic engineer
-          </h3>
+          <h1 className="header__title">{data.title}</h1>
+          <h3 className="header__description">{data.description}</h3>
         </Fade>
       </div>
       <div className="header__buttons">

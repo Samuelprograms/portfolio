@@ -14,8 +14,8 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <Header />
-      <About data={data.about.description} carrousel={data.about.grades}/>
+      <Header data={data.header} />
+      <About data={data.about.description} carrousel={data.about.grades} />
       <Resume data={data.resume} />
       <Portfolio data={data.portfolio.projects} />
       <CurrentWork data={data.portfolio.currentWork} />

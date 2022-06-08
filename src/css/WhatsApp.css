@@ -1,7 +1,7 @@
 .whatsapp-icon {
   position: fixed;
   z-index: 99;
-  font-size: 50px;
+  font-size: 40px;
   bottom: 30px;
   right: 30px;
 }
@@ -11,3 +11,4 @@
 .whatsapp-icon:hover {
   transform: rotate(360deg);
 }
+

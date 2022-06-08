@@ -1,7 +1,11 @@
 export const data = {
+  header: {
+    title: "Samuel Cerón",
+    description: "Self-taught software developer & Mechatronics engineer",
+  },
   about: {
     description: `What's up!
-    I am Samuel Cerón, Self-Taught Web developer, Mechatronics Engineering student and sometimes Python programming teacher, user of Agile methodologies like Scrum and technologies for web development such as HTML, CSS, Javascript, Typescript, React JS, Node JS, Express JS, MongoDB, Python, SQL, Redux, Material UI, styled components and Bootstrap, I have experience with version control software like Git and cloud services such as Github, Firebase, Google Cloud and Mongo Atlas`,
+    I am Samuel Cerón, Self-Taught Software developer currently working for Globant, Mechatronics Engineering student, big fan of Agile methodologies like Scrum and web development technologies such as HTML, CSS, Javascript, Typescript, ReactJS, NextJS, NodeJS, ExpressJS, MongoDB, Python, SQL, Redux, Material UI, Sass, Styled-Components and Bootstrap, I have experience with version control software like Git and cloud services such as Github, Firebase, Google Cloud and Mongo Atlas`,
     grades: [
       {
         title: "Build amazing sites with HTML, CSS and JS",
@@ -257,6 +261,24 @@ export const data = {
         description:
           "This was the first project I worked on in Globant, use NextJS and Drupal",
         url: "https://contigo.abbott/",
+      },
+      {
+        title: "Minesweeper",
+        image: "minesweeper.png",
+        description: "Vanilla JS for fun",
+        url: "https://samuelprograms.github.io/minesweeper/",
+      },
+      {
+        title: "Conway's game of life",
+        image: "game-of-life.png",
+        description: "Vanilla JS for fun",
+        url: "https://samuelprograms.github.io/game-of-life/",
+      },
+      {
+        title: "Colombian subway surfers",
+        image: "runner.jpg",
+        description: "My first game created in Unity",
+        url: "https://github.com/Samuelprograms/subway-surfers",
       },
     ],
     currentWork: [
